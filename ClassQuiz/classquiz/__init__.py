@@ -2,6 +2,7 @@
 #
 # SPDX-License-Identifier: MPL-2.0
 
+import logging
 import sentry_sdk
 from fastapi import FastAPI, Request
 from sentry_sdk.integrations.redis import RedisIntegration
@@ -44,6 +45,12 @@ if settings.sentry_dsn:
 app = FastAPI(redoc_url="", docs_url="/api/docs")
 app.state.database = database
 
+base = logging.getLogger()
+
+for handler in base.handlers:
+    logging.getLogger("uvicorn").addHandler(handler)
+    logging.getLogger("uvicorn.error").addHandler(handler)
+    logging.getLogger("uvicorn.access").addHandler(handler)
 
 @app.middleware("http")
 async def sentry_exception(request: Request, call_next):
