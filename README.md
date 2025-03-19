@@ -1,6 +1,6 @@
 # Instrumentando una aplicación opensource
 
-[ClassQuiz](https://github.com/mawoka-myblock/ClassQuiz) es un SaS parecido a Kahoot! El 
+[ClassQuiz](https://github.com/mawoka-myblock/ClassQuiz) es un SaaS parecido a Kahoot! El 
 ejercicio consiste en instrumentarlo usando 
 las herramientas proporcionadas por 
 opentelemetry y enviarlo a una instancia de 
