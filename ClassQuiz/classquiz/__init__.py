@@ -39,6 +39,8 @@ from classquiz.routers import (
 from classquiz.socket_server import sio
 from classquiz.helpers import meilisearch_init
 
+from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
+
 settings = settings()
 if settings.sentry_dsn:
     sentry_sdk.init(dsn=settings.sentry_dsn, integrations=[RedisIntegration()])
@@ -113,3 +115,5 @@ app.include_router(community.router, tags=["community"], prefix="/api/v1/communi
 app.include_router(avatar.router, tags=["avatar"], prefix="/api/v1/avatar", include_in_schema=True)
 app.include_router(admin.router, tags=["admin"], prefix="/api/v1/admin", include_in_schema=True)
 app.mount("/", ASGIApp(sio))
+
+FastAPIInstrumentor.instrument_app(app)
