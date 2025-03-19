@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "59c33d9e486f3cc771d48edcd35ae1c84d48729643ff62ef7961c2a2eebed204"
+            "sha256": "7b9ebff4b7fe42174ea695e0a6e1443e9f3149119cb2086a7ac0f05954436540"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -1359,10 +1359,37 @@
             "markers": "python_version >= '3.8'",
             "version": "==0.48b0"
         },
+        "opentelemetry-instrumentation-asyncpg": {
+            "hashes": [
+                "sha256:c7cf78f50f489779c3ea526d4fe618589b2606c42ea6ad87d15818f7f70f53d3",
+                "sha256:c9a70241120ada6bf4eafd865254165a24ef9a2d1e44aaeecb836817794781f2"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.8'",
+            "version": "==0.48b0"
+        },
         "opentelemetry-instrumentation-fastapi": {
             "hashes": [
                 "sha256:21a72563ea412c0b535815aeed75fc580240f1f02ebc72381cfab672648637a2",
                 "sha256:afeb820a59e139d3e5d96619600f11ce0187658b8ae9e3480857dd790bc024f2"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.8'",
+            "version": "==0.48b0"
+        },
+        "opentelemetry-instrumentation-redis": {
+            "hashes": [
+                "sha256:48c7f2e25cbb30bde749dc0d8b9c74c404c851f554af832956b9630b27f5bcb7",
+                "sha256:61e33e984b4120e1b980d9fba6e9f7ca0c8d972f9970654d8f6e9f27fa115a8c"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.8'",
+            "version": "==0.48b0"
+        },
+        "opentelemetry-instrumentation-sqlalchemy": {
+            "hashes": [
+                "sha256:625848a34aa5770cb4b1dcdbd95afce4307a0230338711101325261d739f391f",
+                "sha256:dbf2d5a755b470e64e5e2762b56f8d56313787e4c7d71a87fe25c33f48eb3493"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.8'",
@@ -2792,11 +2819,11 @@
         },
         "iniconfig": {
             "hashes": [
-                "sha256:2d91e135bf72d31a410b17c16da610a82cb55f6b0477d1a902134b24a455b8b3",
-                "sha256:b6a85871a79d2e3b22d2d1b94ac2824226a63c6b741c88f7ae975f18b6778374"
+                "sha256:3abbd2e30b36733fee78f9c7f7308f2d0050e88f0087fd25c2645f63c773e1c7",
+                "sha256:9deba5723312380e77435581c6bf4935c94cbfab9b1ed33ef8d238ea168eb760"
             ],
-            "markers": "python_version >= '3.7'",
-            "version": "==2.0.0"
+            "markers": "python_version >= '3.8'",
+            "version": "==2.1.0"
         },
         "mccabe": {
             "hashes": [
@@ -2840,11 +2867,11 @@
         },
         "platformdirs": {
             "hashes": [
-                "sha256:357fb2acbc885b0419afd3ce3ed34564c13c9b95c89360cd9563f73aa5e2b907",
-                "sha256:73e575e1408ab8103900836b97580d5307456908a03e92031bab39e4554cc3fb"
+                "sha256:a03875334331946f13c549dbd8f4bac7a13a50a895a0eb1e8c6a8ace80d40a94",
+                "sha256:eb437d586b6a0986388f0d6f74aa0cde27b48d0e3d66843640bfb6bdcdb6e351"
             ],
-            "markers": "python_version >= '3.8'",
-            "version": "==4.3.6"
+            "markers": "python_version >= '3.9'",
+            "version": "==4.3.7"
         },
         "pluggy": {
             "hashes": [
